@@ -6,11 +6,10 @@
 /* Componentes */
 @import "./util/componentes.css";
 
-/* Header */
-@import "./header/header.css";
-
 /* Home */
+@import "./home/header.css";
 @import "./home/introducao.css";
+@import "./home/tecnologia.css";
 
 /* Bicicletas */
 @import "./bicicletas/bicicletas-lista.css";
