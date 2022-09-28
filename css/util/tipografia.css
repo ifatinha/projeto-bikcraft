@@ -75,3 +75,9 @@
         font-size: 1.5rem;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .font-1-m {
+        font-size: 0.875rem;
+    }
+}
