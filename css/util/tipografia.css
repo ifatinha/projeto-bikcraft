@@ -1,0 +1,29 @@
+.texto-grande {
+    font-family: "Poppins";
+    font-size  : 64px;
+    font-weight: 600;
+    line-height: 1.125;
+}
+
+.texto-medio {
+    font-family: "Roboto";
+    font-size  : 24px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 1200px) {
+    .texto-grande {
+        font-size: 48px;
+    }
+
+    .texto-medio {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .texto-grande {
+        font-size: 32px;
+    }
+}

@@ -1,9 +1,0 @@
-@import "./global/minireset.css";
-@import "./global/global.css";
-@import "./global/header.css";
-
-/*Componentes*/
-@import "./util/componentes.css";
-
-/*Home*/
-@import "./home/introducao.css";

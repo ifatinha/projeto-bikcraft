@@ -1,7 +1,7 @@
 .introducao-bg {
-    background: #000000;
-    box-shadow: inset 0 -120px #ffffff;
-    color     : #ffffff;
+    background: var(--cor-12);
+    box-shadow: inset 0 -120px var(--cor-0);
+    color     : var(--cor-0);
 }
 
 .introducao {
@@ -9,6 +9,10 @@
     gap                  : 0 40px;
     grid-template-columns: 1fr 1fr;
     padding              : 0 20px;
+}
+
+.introducao h1 {
+    margin-bottom: 32px;
 }
 
 .introducao img {
@@ -21,41 +25,14 @@
     padding-bottom: 200px;
 }
 
-.introducao-conteudo h1 {
-    font-family  : "Poppins";
-    font-size    : 64px;
-    font-weight  : 600;
-    line-height  : 1.125;
-    margin-bottom: 32px;
-}
-
-.introducao-conteudo h1 span {
-    color: #ffbb00;
-}
-
 .introducao-conteudo p {
-    color        : #b2b2b2;
-    font-family  : "Roboto";
-    font-size    : 24px;
-    font-weight  : 400;
-    line-height  : 1.5;
     margin-bottom: 20px;
-}
-
-@media screen and (max-width: 1200px) {
-    .introducao h1 {
-        font-size: 48px;
-    }
-
-    .introducao p {
-        font-size: 18px;
-    }
 }
 
 @media screen and (max-width: 800px) {
     .introducao-bg {
-        background-color: #111111;
-        box-shadow      : inset 0 -60px #b2b2b2;
+        background-color: var(--cor-11);
+        box-shadow      : inset 0 -60px var(--cor-0);
         padding-top     : 40px;
     }
 
@@ -69,7 +46,6 @@
     }
 
     .introducao h1 {
-        font-size    : 32px;
         margin-bottom: 16px;
     }
 

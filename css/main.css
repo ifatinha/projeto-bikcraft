@@ -1,0 +1,13 @@
+@import "./global/minireset.css";
+@import "./global/global.css";
+@import "./util/tipografia.css";
+@import "./util/cores.css";
+
+/*Componentes*/
+@import "./util/componentes.css";
+
+/*Header*/
+@import "./home/header.css";
+
+/*Home*/
+@import "./home/introducao.css";
