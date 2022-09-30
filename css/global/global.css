@@ -1,5 +1,5 @@
 body {
-    color      : #111111;
+    color: #111111;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -8,8 +8,8 @@ img[src$=".jpg"] {
 }
 
 .container {
-    padding  : 0 2%;
+    padding: 0 2%;
     max-width: 1200px;
-    margin   : 0 auto;
-    width    : 100%;
+    margin: 0 auto;
+    width: 100%;
 }

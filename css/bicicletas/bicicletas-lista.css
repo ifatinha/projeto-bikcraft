@@ -11,16 +11,16 @@
 }
 
 .bicicletas-lista ul {
-    display       : flex;
-    gap           : 40px;
-    margin        : 0 auto;
-    max-width     : 1400px;
-    overflow-x    : auto;
+    display: flex;
+    gap: 40px;
+    margin: 0 auto;
+    max-width: 1400px;
+    overflow-x: auto;
     padding-bottom: 15px;
 }
 
 .bicicletas-lista li {
-    flex     : 1;
+    flex: 1;
     min-width: 280px;
 }
 
@@ -29,19 +29,19 @@
 }
 
 .bicicletas-lista h3 {
-    align-items  : center;
-    display      : flex;
+    align-items: center;
+    display: flex;
     margin-bottom: 8px;
 }
 
 .bicicletas-lista h3::before {
     background-color: var(--cor-p1);
-    content         : "";
-    display         : inline-block;
-    height          : 8px;
-    margin-right    : 8px;
-    transition      : width 0.2s;
-    width           : 12px;
+    content: "";
+    display: inline-block;
+    height: 8px;
+    margin-right: 8px;
+    transition: width 0.2s;
+    width: 12px;
 }
 
 .bicicletas-lista a:hover h3::before {
