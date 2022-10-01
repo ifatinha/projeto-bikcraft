@@ -5,12 +5,23 @@
     color: var(--cor-p5);
     display: inline-block;
     font: 600 1.125rem/1.33 "Poppins", sans-serif;
+    max-width: max-content;
     padding: 16px 32px;
+    transition: 0.3s;
     text-transform: uppercase;
 }
 
 .btn:hover {
     background: linear-gradient(#ffb60d, #e59317);
+}
+
+.btn.secundario {
+    background: var(--cor-10);
+    color: var(--cor-2);
+}
+
+.btn.secundario:hover {
+    background: var(--cor-9);
 }
 
 @media screen and (max-width: 600px) {
