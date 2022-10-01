@@ -35,7 +35,7 @@
 
 .depoimento p::before {
     content: "“";
-    left: -50px;
+    left: -48px;
     top: -20px;
 }
 
@@ -57,10 +57,24 @@
     .depoimento img {
         max-height: 200px;
     }
+
+    .depoimento p::before,
+    .depoimento p::after {
+        font-size: 4rem;
+    }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 769px) {
+    .depoimento p {
+        font-size: 1.2rem;
+    }
+
+    .depoimento p::before,
+    .depoimento p::after {
+        font-size: 3rem;
+    }
+
     .depoimento p::before {
-        left: -20px;
+        left: -25px;
     }
 }
