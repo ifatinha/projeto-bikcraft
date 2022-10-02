@@ -3,11 +3,13 @@
 @import "./util/tipografia.css";
 @import "./util/cores.css";
 
+@import "./global/header.css";
+@import "./global/footer.css";
+
 /* Componentes */
 @import "./util/componentes.css";
 
 /* Home */
-@import "./home/header.css";
 @import "./home/introducao.css";
 @import "./home/tecnologia.css";
 @import "./home/parceiros.css";
@@ -15,7 +17,6 @@
 
 /* Bicicletas */
 @import "./bicicletas/bicicletas-lista.css";
-
 
 /* Seguros */
 @import "./seguros/seguros.css";
