@@ -24,6 +24,25 @@
     background: var(--cor-9);
 }
 
+.btn.seta {
+    align-items: center;
+    display: flex;
+}
+
+.btn.seta::after {
+    background: url("../../img/icones/seta.svg");
+    content: "";
+    display: inline-block;
+    height: 10px;
+    margin-left: 12px;
+    transition: transform 0.2s;
+    width: 18px;
+}
+
+.btn.seta:hover::after {
+    transform: translateX(4px);
+}
+
 @media screen and (max-width: 600px) {
     .btn {
         font-size: 1rem;
