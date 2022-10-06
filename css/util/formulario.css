@@ -16,7 +16,8 @@
 
 .form input[type="text"],
 .form input[type="email"],
-.form textarea {
+.form textarea,
+.form select {
     background-color: var(--cor-1);
     border: 1px solid var(--cor-2);
     border-radius: 4px;

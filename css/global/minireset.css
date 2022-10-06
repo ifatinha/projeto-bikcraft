@@ -84,3 +84,8 @@ a {
 textarea {
     resize: none;
 }
+
+button {
+    border: none;
+    cursor: pointer;
+}

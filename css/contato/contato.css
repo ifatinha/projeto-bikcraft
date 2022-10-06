@@ -72,11 +72,6 @@
     border-bottom-right-radius: 5px;
 }
 
-.contato-formulario button {
-    border: none;
-    cursor: pointer;
-}
-
 @media screen and (max-width: 800px) {
     .contato {
         grid-template-columns: 1fr;
