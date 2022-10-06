@@ -33,6 +33,21 @@
     grid-column: 1/-1;
 }
 
+.lojas-conteudo h3 {
+    position: relative;
+    padding-left: 20px;
+}
+
+.lojas-conteudo h3::before {
+    background-color: var(--cor-p1);
+    content: "";
+    height: 6px;
+    left: 0;
+    position: absolute;
+    top: 18px;
+    width: 10px;
+}
+
 .lojas-dados {
     border-left: 2px solid var(--cor-2);
     display: grid;
@@ -59,6 +74,10 @@
 
     .lojas-conteudo {
         grid-template-columns: 1fr;
+    }
+
+    .lojas-conteudo h3::before {
+       top: 12px;
     }
 }
 
