@@ -37,8 +37,20 @@
 }
 
 .orcamento-produto label {
-    background: var(--cor-5);
+    display: inline-block;
     padding: 20px;
+}
+
+.orcamento-conteudo {
+    background: #222;
+    display: none;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+#bikcraft:checked~#orcamento-bikcraft,
+#seguro:checked~#orcamento-seguro {
+    display: inline-block;
 }
 
 .orcamento-dados {
