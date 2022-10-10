@@ -17,8 +17,9 @@
 .form input[type="text"],
 .form input[type="email"],
 .form textarea,
-.form select {
-    background-color: var(--cor-1);
+.form select,
+.form input[type="checkbox"] {
+    background: var(--cor-1);
     border: 1px solid var(--cor-2);
     border-radius: 4px;
     font: 400 1rem/1.5 "Roboto", sans-serif;

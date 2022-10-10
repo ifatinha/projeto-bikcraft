@@ -46,6 +46,11 @@
     pointer-events: none;
 }
 
+.orcamento-produto input:checked+label {
+    background-color: var(--cor-0);
+    color: var(--cor-11);
+}
+
 .orcamento-produto>* {
     grid-column: 1/-1;
 }
@@ -55,12 +60,15 @@
 }
 
 .orcamento-produto label {
+    align-items: center;
     background-color: var(--cor-10);
     border-radius: 4px;
+    border: 1px solid var(--cor-10);
     color: var(--cor-4);
     cursor: pointer;
-    display: block;
+    display: grid;
     font: 400 1rem/1.5 "Poppins", sans-serif;
+    grid-template-columns: auto 1fr auto;
     padding: 12px 16px;
 }
 
@@ -79,17 +87,110 @@
     box-shadow: inset 0 0 0 3px var(--cor-0), inset 0 0 0 6px var(--cor-7);
 }
 
-.orcamento-produto input:checked+label {
-    background-color: var(--cor-0);
-    color: var(--cor-11);
+.orcamento-produto label span {
+    display: none;
+}
+
+.orcamento-produto input:checked+label span {
+    display: inline-block;
+}
+
+.orcamento-produto label:hover {
+    background-color: var(--cor-9);
+    border-color: var(--cor-9);
+}
+
+.orcamento-produto input:focus+label {
+    box-shadow: 0 0 0 2px var(--cor-p1);
+    border-color: var(--cor-12);
+}
+
+.orcamento-conteudo h2,
+.orcamento-dados h2:nth-of-type(n + 2) {
+    margin-top: 20px;
+}
+
+.orcamento-conteudo {
+    display: none;
 }
 
 #bikcraft:checked~#orcamento-bikcraft,
 #seguro:checked~#orcamento-seguro {
-    /*display: inline-block;*/
+    display: grid;
+    gap: 20px;
+}
+
+.orcamento-detalhes {
+    align-items: center;
+    background: var(--cor-0);
+    border-radius: 4px;
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+.orcamento-detalhes li {
+    align-items: center;
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.orcamento-detalhes li img {
+    height: 16px;
+    margin-right: 8px;
+    width: 16px;
+}
+
+.orcamento-produto input:checked+label+.orcamento-detalhes {
+    display: grid;
 }
 
 .orcamento-dados {
     background: var(--cor-0);
     border-radius: 0 5px 5px 0;
+}
+
+.orcamento-dados .orcamento-termos {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.form .orcamento-termos input[type="checkbox"] {
+    background: #eee;
+    height: 25px;
+}
+
+.orcamento-termos a {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .orcamento-produto,
+    .orcamento-dados {
+        padding: 32px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .orcamento {
+        grid-template-columns: 1fr;
+    }
+
+    .orcamento-produto {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .orcamento-dados {
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .orcamento-produto {
+        grid-template-columns: 1fr;
+    }
 }
