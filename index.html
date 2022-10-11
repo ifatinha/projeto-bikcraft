@@ -10,12 +10,14 @@
     <meta name="keywords" content="Bicicletas, Bikcraft, Elétricas">
     <meta name="author" content="Fátima Ferreira">
 
+    <link rel="preload" href="css/main.css" as="style">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="img/icones/eletrica.svg" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
 
     <title>Bikcraft - Bicicletas Elétricas</title>
@@ -25,7 +27,7 @@
     <header class="header-bg">
         <div class="header container">
             <a href="./">
-                <img src="img/bikcraft.svg" alt="Bikcraft">
+                <img src="img/bikcraft.svg" width="136" height="32" alt="Bikcraft">
             </a>
             <nav aria-label="primaria">
                 <ul class="header-menu cor-0 font-1-m">
@@ -46,9 +48,10 @@
                 </p>
                 <a href="./bicicletas.html" class="btn">Escolha a sua</a>
             </div>
-            <div>
+            <picture>
+                <source srcset="./img/bicicletas/nimbus.jpg" media="(max-width: 800px)">
                 <img src="./img/fotos/introducao.jpg" alt="Bicicleta Elétrica Preta.">
-            </div>
+            </picture>
         </div>
     </main>
 
