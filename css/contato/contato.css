@@ -14,7 +14,7 @@
 }
 
 .contato-dados {
-    background-color: var(--cor-12);
+    background: var(--cor-12) url("../../img/dec/bottom-left.svg") no-repeat bottom 20px left 20px;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 }
@@ -67,7 +67,7 @@
 }
 
 .contato-formulario {
-    background-color: var(--cor-0);
+    background: var(--cor-0) url("../../img/dec/bottom-right.svg") no-repeat right 20px bottom 20px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -83,9 +83,8 @@
     }
 
     .contato-dados {
-        border-bottom-left-radius: 0px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+        border-radius: 5px 5px 0 0;
+        background: var(--cor-12);
     }
 
     .contato-dados h2,
