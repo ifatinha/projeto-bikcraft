@@ -17,8 +17,7 @@
 .form input[type="text"],
 .form input[type="email"],
 .form textarea,
-.form select,
-.form input[type="checkbox"] {
+.form select {
     background: var(--cor-1);
     border: 1px solid var(--cor-2);
     border-radius: 4px;
