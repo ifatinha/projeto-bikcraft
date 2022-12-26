@@ -1,4 +1,4 @@
-/** menu de navegação ativo*/
+/** menu de navegação ativo */
 const links = document.querySelectorAll(".header-menu a");
 
 function ativarLink(link) {
@@ -12,3 +12,39 @@ function ativarLink(link) {
 
 links.forEach(ativarLink);
 /**************************** */
+
+/** Ativar itens do Orçamento */
+const parametros = new URLSearchParams(location.search);
+parametros.forEach(ativarProduto);
+
+function ativarProduto(parametro) {
+    const elemento = document.getElementById(parametro);
+
+    if (elemento) {
+        elemento.checked = true;
+    }
+}
+
+/*************************** */
+
+/** perguntas frequentes */
+const perguntas = document.querySelectorAll(".perguntas .btn-perguntas");
+
+function abrirPergunta(event) {
+    const pergunta = event.currentTarget;
+    const controls = pergunta.getAttribute("aria-controls");
+    const resposta = document.getElementById(controls);
+    resposta.classList.toggle("ativa");
+
+    if (resposta.classList.contains("ativa")) {
+        pergunta.setAttribute("aria-expanded", "true");
+    } else {
+        pergunta.setAttribute("aria-expanded", "false");
+    }
+}
+
+function eventosPerguntas(pergunta) {
+    pergunta.addEventListener('click', abrirPergunta);
+}
+
+perguntas.forEach(eventosPerguntas);
